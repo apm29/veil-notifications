@@ -15,7 +15,6 @@
   </div>
 </template>
 <script>
-import "./chunked.css"
 export default {
   name: "NotificationContent",
   props: {
