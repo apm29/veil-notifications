@@ -12,11 +12,11 @@ npm install veil-notification --save
 ```vue
 <template>
   <router-view></router-view>
-  <Notification/>
+  <VeilNotifications/>
 </template>
 
 <script>
-import Notification from 'veil-notification'
+import { VeilNotifications } from 'veil-notifications'
 export default {
   
 }
@@ -25,7 +25,7 @@ export default {
 
 2.在代码中发送通知
 ```javascript
-import { notification } from "./components/notify"
+import { notification } from "veil-notifications"
 
 notification.success("I'm message content")
 ```
