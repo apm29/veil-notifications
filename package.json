@@ -28,7 +28,7 @@
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js",
     "tailwind" : "NODE_ENV=production npx tailwindcss-cli@latest build -i ./src/lib-components/index.css -o ./dist/index.css",
-    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js && npx tailwindcss-cli@latest build -i ./src/lib-components/index.css -o ./dist/index.css",
+    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js && NODE_ENV=production  npx tailwindcss-cli@latest build -i ./src/lib-components/index.css -o ./dist/index.css",
     "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
