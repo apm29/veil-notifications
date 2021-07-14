@@ -8,7 +8,7 @@ npm install veil-notification --save
 ```
 
 ### USAGE
-1.首先在全局组件中放置`Notification`组件,一般就放置在`App.vue`
+1.首先在全局组件中放置`VeilNotifications`组件,一般就放置在`App.vue`,引入css文件
 ```vue
 <template>
   <router-view></router-view>
@@ -17,6 +17,7 @@ npm install veil-notification --save
 
 <script>
 import { VeilNotifications } from 'veil-notifications'
+import "veil-notifications/dist/index.css"
 export default {
   
 }
